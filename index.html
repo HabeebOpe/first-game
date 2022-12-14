@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/1c36f4658d.js" crossorigin="anonymous">
+   </script>
+   <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+   <div class="loading" id="load">
+      <div class="heading">
+         <p>@BEEBTECH</p>
+      </div>
+      <div class="bod-sec">
+         <img src="asset/nod2.png">
+         <h2>Rock Paper Scissors</h2>
+      </div>
+      <div class="load-icon">
+         <i class="fa fa-cog"></i>
+         &nbsp;
+         <p>Loading...</p>
+      </div>
+      <div class="foot-sec">
+         <p>© copyright BT 2022 All Rights Reserved </p>
+      </div>
+   </div>
+   <div id="head" class="header">
+      <div class="point">
+         <h3>COM</h3>
+         <h2 id="com-sc">0</h2>
+      </div>
+      <div class="point">
+         <h2 id="you-sc">0</h2>
+         <h3>YOU</h3>
+      </div>
+   </div>
+   <div id="cont" class="container">
+      <div class="wrapper">
+         <div class="gam">
+            <h2>COMPUTER</h2>
+            <h3 id="computer-ch"></h3>
+         </div>
+         
+         <div class="gam">
+            <h2>YOU</h2>
+            <h3 id="user-ch"></h3>
+         </div>
+        
+      </div>
+      <div class="result">
+         <h2>RESULT</h2> 
+         <h3 id="result"></h3>
+      </div>
+      <div class="btns">
+         <button class="bt" id="Rock">Rock</button>
+         <button class="bt" id="Paper">Paper</button>
+         <button class="bt" id="Scissors">Scissors</button>
+      </div>
+   </div>
+   <div id="message" class="message">
+      <p>Reach 30 points before the computer does by clicking the buttons above to choose which object you want to draw</p>
+   </div>
+   <div class="over-modal" id="game-over">
+        <div class="over-modal-bg">
+            <div class="ov-modal">
+                <div class="bod-sec">
+                    <h3>Game Over!</h3>
+                </div>
+                <div id="status" class="status">
+                </div>
+                <div class="sc">
+                        <h3>Your Score:</h3>
+                        <span id="you-sco"></span>
+                    </div>
+                    <div class="sc">
+                        <h3>Computer's Score:</h3>
+                        <span id="com-sco"></span>
+                    </div>
+                <div class="try-score">
+                    <button id="restart">Replay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+
+</html>
